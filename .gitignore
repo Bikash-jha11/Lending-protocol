@@ -1,0 +1,31 @@
+# --- Anchor / Solana Specific ---
+.anchor/
+target/
+deploy/
+test-ledger/
+dist/
+
+# --- Private Keys and Secrets ---
+# NEVER commit your wallet keys or environment secrets
+*.json
+!node_modules/**/*.json
+.env
+.env.*
+
+# --- Node / JavaScript / TypeScript ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.pnpm-store/
+
+# --- Rust Specific ---
+**/*.rs.bk
+Cargo.lock
+
+# --- IDEs and OS ---
+.vscode/
+.idea/
+.DS_Store
+thumbs.db
